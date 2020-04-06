@@ -12,8 +12,10 @@ Convert HTML to PDF using Webkit (QtWebKit) on AWS Lambda
 7. Click **Upload** button to upload [this project as zip archive](https://github.com/lubos/aws-lambda-wkhtmltopdf/releases/download/0.1/wkhtmltopdf.zip).
 8. Select **lambda_basic_execution** role (this function doesn't need access to any part of your AWS account)
 9. Increase timeout from 3 seconds to 10 seconds or more.
-10. Click **Next** button
-11. Review your configuration and click **Create function** button
+10. Add the following Environment Variable: 
+    FONTCONFIG_PATH=/var/task/fonts
+1.  Click **Next** button
+2.  Review your configuration and click **Create function** button
 
 ## Testing function
 
